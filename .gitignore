@@ -3,4 +3,4 @@ venv/
 __pycache__/
 *.pyc
 wynik.json
-temp_uploaded.pdf
+temp.pdf

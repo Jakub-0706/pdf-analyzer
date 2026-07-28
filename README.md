@@ -19,6 +19,7 @@ Dla firm i osób, które regularnie pracują z dużą liczbą dokumentów PDF i 
 - pdfplumber — ekstrakcja tekstu z PDF
 - Google Gemini API — analiza treści przez AI
 - python-dotenv — bezpieczne zarządzanie kluczem API
+- Streamlit — interfejs webowy
 
 ## Jak uruchomić
 
@@ -44,20 +45,26 @@ GEMINI_API_KEY=twój_klucz_tutaj
 
 (klucz można uzyskać za darmo na [aistudio.google.com](https://aistudio.google.com))
 
-5. Wrzuć plik PDF do folderu `sample_pdfs/` i wskaż jego ścieżkę w `main.py`
+### Wersja webowa (zalecana)
 
-6. Uruchom:
 ```bash
-   python main.py
+streamlit run app.py
 ```
+Otworzy się przeglądarka, gdzie można wgrać plik PDF i od razu zobaczyć wynik analizy.
 
-7. Wynik znajdziesz w pliku `wynik.json`
+### Wersja terminalowa
+
+Wrzuć plik PDF do folderu `sample_pdfs/`, wskaż jego ścieżkę w `main.py`, następnie:
+```bash
+python main.py
+```
+Wynik zapisany zostanie w pliku `wynik.json`.
 
 ## Planowane rozszerzenia
 
 - Obsługa wielu plików naraz (całe foldery)
-- Prosty interfejs webowy (bez konieczności używania terminala)
 - Obsługa zeskanowanych dokumentów (OCR)
+- Wdrożenie aplikacji online (obecnie działa tylko lokalnie)
 
 ## Status projektu
 
